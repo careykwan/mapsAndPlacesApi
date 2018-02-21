@@ -14,8 +14,8 @@ function initMap() {
   service.nearbySearch({
     location: place,
     radius: 50000,
-    type: ['lodging'],
-    name: "backpackers"
+    type: ['generic_recreational'],
+    name: ["park", "camp", "lake"]
   }, callback);
 
 }
