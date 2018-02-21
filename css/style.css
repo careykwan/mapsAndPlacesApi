@@ -6,6 +6,64 @@
   height: 400px;
   width: 100%; }
 
-#map2 {
-  height: 400px;
-  width: 100%; }
+.body2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
+
+.app-container2 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  border: solid 2px #000;
+  margin: 30px; }
+  .app-container2 .info-search-container2 {
+    width: 55%;
+    padding: 15px; }
+    .app-container2 .info-search-container2 .name-of-app2 {
+      margin-right: 20px; }
+      .app-container2 .info-search-container2 .name-of-app2 .app-title2 {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0;
+        text-align: left; }
+      .app-container2 .info-search-container2 .name-of-app2 .sub-app-title2 {
+        font-style: italic;
+        font-size: 14px;
+        margin: 0;
+        margin-top: 5px; }
+    .app-container2 .info-search-container2 .search-filter-container2 {
+      width: 100%; }
+      .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between; }
+        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 #searchBar2 {
+          width: 65%;
+          border: solid 0.5px #bbbbbb;
+          margin: 0;
+          padding-left: 10px; }
+        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-icon-wrapper2 {
+          width: 8%;
+          margin: auto; }
+          .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-icon-wrapper2 .search-icon2 {
+            font-size: 30px;
+            text-align: center;
+            color: lightgray; }
+        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-btn2 {
+          width: 25%;
+          margin-left: 10px;
+          margin-top: 5px; }
+  .app-container2 .map-container2 {
+    height: 400px;
+    max-height: 500px;
+    width: 45%; }
+    .app-container2 .map-container2 #map2 {
+      height: 100%;
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
