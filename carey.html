@@ -1,9 +1,22 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Carey's website</title>
+	<!-- <link rel="stylesheet" type="text/css" href="scss/modules/carey.scss"> -->
+	<style type="text/css">
+		#map {
+        height: 400px;
+        width: 100%;
+       }
+	</style>
 </head>
 <body>
-	
+	<h3>My Google Maps Demo</h3>
+    <div id='map'></div>
+
+<script type='text/javascript' src='node_modules/jquery/dist/jquery.min.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-i0Prlq_867UzFtLYIaLz1UeSsCxhQ10&callback=initMap"></script>
+<script type='text/javascript' src='js/carey.js'></script>
 </body>
+
 </html>
