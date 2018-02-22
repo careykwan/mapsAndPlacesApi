@@ -1,7 +1,7 @@
- // $(document).ready(function() {
- //    $('select').material_select();
- //  });
-     // 
+ $(document).ready(function() {
+    $('select').material_select();
+  });
+     
 
 var map;
 var infowindow;
@@ -20,7 +20,7 @@ function initMap() {
     location: place,
     radius: 80000,
     type: ['lodging'],
-    name: "YHA"
+    keyword: "backpackers"
   }, callback);
 
 }
