@@ -12,7 +12,7 @@
 }
 #container3 {
 
-	background-color: lightgrey;
+	background-color: grey;
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 10vh;
@@ -32,11 +32,12 @@
 	font-size: 30px;
 
 }
-#btn-container3{
-	position: relative;
-	top:70vh;
-	right:500px;
-	height: 40px;
-	width: 125px;
-	float:left;
+.return-btn3{
+	margin-left: 75px;
+
+}
+
+.browser-default {
+	width: 90%;
+
 }
