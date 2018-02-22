@@ -4,7 +4,24 @@
 
 #map3 {
   height: 400px;
-  width: 50%; }
+  width: 40%;
+  float: right; }
+
+#container3 {
+  background-color: lightgrey;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px;
+  width: 90%;
+  height: 400px; }
+
+#heading3 {
+  float: left;
+  margin-left: 15%;
+  font-size: 30px; }
+
+#returnBtn3 {
+  margin-top: 350px; }
 
 .body2 {
   font-family: 'Open Sans', sans-serif;
@@ -57,7 +74,7 @@
           .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-icon-wrapper2 .search-icon2 {
             font-size: 30px;
             text-align: center;
-            color: lightgrey; }
+            color: lightgray; }
         .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-btn2 {
           width: 25%;
           margin-left: 10px;
@@ -69,3 +86,5 @@
     .app-container2 .map-container2 #map2 {
       height: 100%;
       width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

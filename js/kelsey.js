@@ -1,3 +1,8 @@
+ // $(document).ready(function() {
+ //    $('select').material_select();
+ //  });
+     // 
+
 var map;
 var infowindow;
 
