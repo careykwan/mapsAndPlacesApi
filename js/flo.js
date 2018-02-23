@@ -30,7 +30,7 @@ function initMap() {
         types: ["food"],
         keyword: enteredKeyword[0],
     }, callback);
-}
+} 
 
 function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -41,9 +41,10 @@ function callback(results, status) {
         console.log("cannot connect to server");
         alert("No results Aval");
     }
-    console.log(results);
-    
+    var getNames = results.map(function (a) { return a.name; });
+    console.log(getNames);
 }
+
 
 function createMarker(place) {
     var placeLoc = place.geometry.location;
@@ -58,5 +59,9 @@ function createMarker(place) {
     });
 
 }
+
+$(document).ready(function () {
+    $('select').material_select();
+});
 
 
