@@ -148,32 +148,30 @@
       width: 100%;
       margin-top: 15px;
       padding: 10px;
-      border: solid 0.5px #bbbbbb;
+      border: solid 1px #bbbbbb;
       height: 50%;
       max-height: 800px;
-      background: #e7e7e7;
       overflow: scroll;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center; }
-      .app-container2 .info-search-container2 .data-ouput-container2 .errorMessage2 {
+      .app-container2 .info-search-container2 .data-ouput-container2 .error-message-wrapper2 {
         align-self: center;
-        justify-content: center;
-        width: 60%;
-        margin: auto; }
-        .app-container2 .info-search-container2 .data-ouput-container2 .errorMessage2 .error-message2 {
-          font-size: 20px;
-          margin: 0;
-          font-weight: 700;
-          text-align: center; }
+        width: 100%;
+        margin: auto;
+        font-size: 30px;
+        margin: 0;
+        font-weight: 700;
+        text-align: center; }
       .app-container2 .info-search-container2 .data-ouput-container2 .card-wrapper2 {
         margin: 5px;
         background: white;
         width: 47%;
         height: 200px;
         max-height: 500px;
-        overflow: scroll; }
+        overflow: scroll;
+        box-shadow: 3px 3px 10px 3px #ccc; }
         .app-container2 .info-search-container2 .data-ouput-container2 .card-wrapper2 .card-color2 {
           float: left;
           width: 10%;

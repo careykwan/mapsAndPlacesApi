@@ -9,13 +9,12 @@ var typeOfEstablishment = ['food'];
 searchBtn.addEventListener('click', function getUserInput() {
     var userInputKeyword = document.getElementById('searchBar2').value;
     var userSelectedType = document.getElementById('establishmentSelect2').value;
-   
+
     enteredKeyword.push(userInputKeyword);
     typeOfEstablishment.push(userSelectedType);
 
     enteredKeyword.splice(0, 1);
     typeOfEstablishment.splice(0, 1);
-
 
     $('#dataOuputContainer2').empty();
 
@@ -23,13 +22,11 @@ searchBtn.addEventListener('click', function getUserInput() {
 
 }, false);
 
-
-
 function initMap() {
-    var place = { lat: -40.9006, lng: 174.8860 };
+    var place = { lat: -41.220518, lng: 174.787949 };
     map = new google.maps.Map(document.getElementById('map2'), {
         center: place,
-        zoom: 8
+        zoom: 9.5
     });
 
     infowindow = new google.maps.InfoWindow();
@@ -46,7 +43,7 @@ function initMap() {
 function callback(results, status) {
    
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-        document.getElementById('errorMessage2').style.display = 'none';
+        // document.getElementById('errorMessage2').style.display = 'none';
         for (var i = 0; i < results.length; i++) {
             createMarker(results[i]);
         }
@@ -54,7 +51,14 @@ function callback(results, status) {
         // console.log('cannot connect to server');
         // alert('No results Aval');
         // $('.error-message-wrapper2').show();
-        document.getElementById('errorMessage2').style.display = 'block';
+        // document.getElementById('errorMessage2').style.display = 'block';
+
+        var errorMessageWrapper = document.createElement('h3');
+        errorMessageWrapper.className = 'error-message-wrapper2';
+        document.getElementById('dataOuputContainer2').appendChild(errorMessageWrapper);
+
+        var errorMessage = document.createTextNode('Sorry there are no results matching your search, please try again.');
+        errorMessageWrapper.appendChild(errorMessage);
     }
 
     var searchData = results.map(function (data) {
