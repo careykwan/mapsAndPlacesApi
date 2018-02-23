@@ -9,6 +9,7 @@ submitBtn.addEventListener('click', function getRadioChoice(){
   chosenKeyword.push(chosenRadio);
   console.log(chosenKeyword);
   chosenKeyword.splice(0, 1);
+
   initMap();
   
 
@@ -41,7 +42,9 @@ function callback(results, status) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       createMarker(results[i]);
-      // console.log(results);
+      console.log(results[i].name);
+      console.log(results[i].vicinity);
+       
     }
   }
 }
