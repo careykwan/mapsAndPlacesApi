@@ -16,6 +16,9 @@ searchBtn.addEventListener('click', function getUserInput() {
     enteredKeyword.splice(0, 1);
     typeOfEstablishment.splice(0, 1);
 
+
+    $('#dataOuputContainer2').empty();
+
     initMap();
 
 }, false);
@@ -40,6 +43,8 @@ function initMap() {
     }, callback);
 }
 
+
+
 function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
@@ -51,35 +56,45 @@ function callback(results, status) {
     }
 
     var searchData = results.map(function (data) {
-        returnSearchData(data);
+        appendResultCards(data);
     });
-
 }
 
-function returnSearchData(searchData) {
-    // console.log(searchData);
-    imagetest(searchData);
-
-    // var x = document.createElement("IMG");
-    // x.setAttribute("src", "img_pulpit.jpg");
-    // x.setAttribute("width", "304");
-    // x.setAttribute("height", "228");
-    // x.setAttribute("alt", "The Pulpit Rock");
-    // document.body.appendChild(x);
-
-}
-
-function imagetest(search) {
+// @appendResultCards a function thst contains the appending element for the search result cards
+function appendResultCards(searchData){
     var output = document.getElementById('dataOuputContainer2');
+    var colorArray = ['#fc5c65', '#26de81', '#fd9644', '#45aaf2', '#2bcbba', '#fed330', '#4b6584', '#4b7bec', '#a55eea', '#747d8c', '#ffa502', '#ff7f50', '#ff6b81', '#a4b0be', '#2ed573', '#1e90ff', '#2f3542', '#e84118', '#8c7ae6','#3742fa' ];
+   
+    var count = 0;
 
-    var blah = document.createElement("IMG");
-    blah.setAttribute("src", search.icon);
-    blah.setAttribute("width", "100");
-    blah.setAttribute("height", "100");
-    blah.setAttribute("alt", "image");
-    output.appendChild(blah);
+    // creating div for search card
+    var cardDiv = document.createElement('div');
+    cardDiv.setAttribute('class', 'card-wrapper2');
+    output.appendChild(cardDiv);
 
-    console.log(search);
+    // creating colour tag
+    var colorstrip = document.createElement('div');
+    colorstrip.setAttribute('class', 'card-color2');
+    // to get different background colours in the colorstrip
+    var colorstripHi = document.getElementsByClassName('card-color2');
+    for (var i = 0; i < colorstripHi.length; i++) {
+        colorstripHi[i].style.background = colorArray[i];
+    }
+    cardDiv.appendChild(colorstrip);
+
+    // creating text div wrapper
+    var cardTextWrapper = document.createElement('div');
+    cardTextWrapper.setAttribute('class', 'card-text-wrapper2');
+    cardDiv.appendChild(cardTextWrapper);
+
+    // creating h1 element for card title
+    var cardTitle = document.createElement('h1');
+    cardTitle.setAttribute('class', 'card-Title2');
+    cardTextWrapper.appendChild(cardTitle);
+
+    var titleName = document.createTextNode(searchData.name);
+    cardTextWrapper.appendChild(titleName);
+
 }
 
 function createMarker(place) {

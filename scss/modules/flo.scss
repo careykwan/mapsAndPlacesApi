@@ -18,8 +18,8 @@
 .app-container2{
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
+    align-content: space-between;
+    justify-content: center;
     border: solid 2px #000;
     margin: 30px;
     height: 82%;
@@ -30,9 +30,10 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: center;
+        // justify-content: space-between;
         .name-of-app2{
             width: 100%;
+            height: 20%;
             margin-right: 20px;
             padding: 20px;
             border: solid 0.5px #bbbbbb;
@@ -55,6 +56,7 @@
             margin-top: 15px;
             padding: 20px;
             width: 100%;
+            height: 35%;
             border: solid 0.5px #bbbbbb;
 
             .search-bar-wrapper2{
@@ -97,19 +99,49 @@
             }
 
             .search-btn2{
-                width: 25%;
+                width: 40%;
                 float: right;
             }
         }
         .data-ouput-container2{
             width: 100%;
             margin-top: 15px;
-            padding: 20px;
+            padding: 10px;
             border: solid 0.5px #bbbbbb;
-            height: 200px;
-            max-height: 500px;
+            height: 45%;
+            max-height: 800px;
             background: #e7e7e7;
             overflow: scroll;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .card-wrapper2{
+                margin: 5px;
+                background: white;
+                width: 45%;
+                height: 150px;
+                max-height: 300px;
+                // display: 
+
+                .card-color2{
+                    float: left;
+                    width:10%;
+                    height: 100%;
+                    background: #44efff;
+                }
+
+                .card-text-wrapper2{
+                    float: right;
+                    width: 90%;
+                    height: 100%;
+                    .card-title2{
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                }
+               
+            }
             p{
                 margin: 0;
             }
@@ -118,7 +150,7 @@
 
     .map-container2{
         height: 100%;
-        max-height: 800px;
+        max-height: 1200px;
         width: 60%;
         #map2 {
             height: 100%;
@@ -126,8 +158,5 @@
         }
     }
 }
-.card-img-top{
-    width: 100px;
-    height: 100px;
-}
+
 
