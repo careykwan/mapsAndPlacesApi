@@ -70,9 +70,9 @@
   margin: 0;
   padding: 0; }
 
-.back-btn2 {
-  margin-left: 30px;
-  margin-top: 30px; }
+.back-btn-wrapper2 {
+  height: 5%;
+  margin: 30px; }
 
 .app-container2 {
   display: flex;
@@ -80,52 +80,90 @@
   align-content: center;
   justify-content: space-between;
   border: solid 2px #000;
-  margin: 30px; }
+  margin: 30px;
+  height: 82%; }
   .app-container2 .info-search-container2 {
-    width: 55%;
-    padding: 15px; }
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
     .app-container2 .info-search-container2 .name-of-app2 {
-      margin-right: 20px; }
+      width: 100%;
+      margin-right: 20px;
+      padding: 20px;
+      border: solid 0.5px #bbbbbb; }
       .app-container2 .info-search-container2 .name-of-app2 .app-title2 {
         font-weight: 700;
         font-size: 20px;
         margin: 0;
-        text-align: left; }
+        text-align: center; }
       .app-container2 .info-search-container2 .name-of-app2 .sub-app-title2 {
         font-style: italic;
         font-size: 14px;
+        text-align: center;
         margin: 0;
         margin-top: 5px; }
     .app-container2 .info-search-container2 .search-filter-container2 {
-      width: 100%; }
-      .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 {
+      margin: 0;
+      margin-top: 15px;
+      padding: 20px;
+      width: 100%;
+      border: solid 0.5px #bbbbbb; }
+      .app-container2 .info-search-container2 .search-filter-container2 .search-bar-wrapper2 {
+        margin-top: 0px;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: space-between; }
-        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 #searchBar2 {
-          width: 65%;
-          border: solid 0.5px #bbbbbb;
+        .app-container2 .info-search-container2 .search-filter-container2 .search-bar-wrapper2 #searchBar2 {
+          width: 93%;
+          border: solid 0.5px #d3d3d3;
           margin: 0;
           padding-left: 10px; }
-        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-icon-wrapper2 {
-          width: 8%;
-          margin: auto; }
-          .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-icon-wrapper2 .search-icon2 {
+        .app-container2 .info-search-container2 .search-filter-container2 .search-bar-wrapper2 .search-icon-wrapper2 {
+          width: 5%;
+          margin: 5 auto;
+          margin-left: 5px;
+          margin-right: 15px; }
+          .app-container2 .info-search-container2 .search-filter-container2 .search-bar-wrapper2 .search-icon-wrapper2 .search-icon2 {
             font-size: 30px;
             text-align: center;
-            color: lightgray; }
-        .app-container2 .info-search-container2 .search-filter-container2 .search-bar2 .search-btn2 {
-          width: 25%;
-          margin-left: 10px;
-          margin-top: 5px; }
+            color: #d3d3d3; }
+      .app-container2 .info-search-container2 .search-filter-container2 .selecter-wrapper2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center; }
+        .app-container2 .info-search-container2 .search-filter-container2 .selecter-wrapper2 .establishment-selecter2 {
+          width: 100%; }
+      .app-container2 .info-search-container2 .search-filter-container2 .search-btn2 {
+        width: 25%;
+        float: right; }
+    .app-container2 .info-search-container2 .data-ouput-container2 {
+      width: 100%;
+      margin-top: 15px;
+      padding: 20px;
+      border: solid 0.5px #bbbbbb;
+      height: 200px;
+      max-height: 500px;
+      background: #e7e7e7;
+      overflow: scroll; }
+      .app-container2 .info-search-container2 .data-ouput-container2 p {
+        margin: 0; }
   .app-container2 .map-container2 {
-    height: 400px;
-    max-height: 500px;
-    width: 45%; }
+    height: 100%;
+    max-height: 800px;
+    width: 60%; }
     .app-container2 .map-container2 #map2 {
       height: 100%;
       width: 100%; }
+
+.card-img-top {
+  width: 100px;
+  height: 100px; }
 
 /*# sourceMappingURL=style.css.map */

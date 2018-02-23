@@ -11,7 +11,10 @@
 </head>
 
 <body class="body2">
-	<a href="index.html" class="waves-effect waves-light btn back-btn2"><i class="material-icons left">arrow_back</i>BACK</a>
+	<div class="back-btn-wrapper2">
+		<a href="index.html" class="waves-effect waves-light btn back-btn2"><i class="material-icons left">arrow_back</i>BACK</a>
+	</div>
+	
 	 
 	<div class="app-container2">
 		<div class="info-search-container2">
@@ -21,29 +24,32 @@
 			</div>
 
 			<div class="search-filter-container2">
-				<div class="input-field search-bar2">
+				<div class="input-field search-bar-wrapper2">
 					<div class="search-icon-wrapper2">
 						<i class="material-icons search-icon2">search</i>
 					</div>
 					<input placeholder="Search...coffee, chicken, beer" id="searchBar2" type="text" value="">
+				</div>
+				
+				<div class="selecter-wrapper2">
+					<div class="input-field col s12 establishment-selecter2">
+						<select id="establishmentSelect2">
+							<option value="food" selected>Choose a Type of Establishment</option>
+							<option value="cafe">Cafes</option>
+							<option value="restaurant">Restaurants</option>
+							<option value="meal_takeaway">Takeaways</option>
+							<option value="bar">Bars</option>
+						</select>
+					</div>
+				</div>
 
-					<button class="waves-effect waves-light btn search-btn2" id="searchBtn2">SEARCH</button>
-				</div>
-				<div class="input-field col s12">
-					<select multiple>
-						<option value="" disabled selected>Choose your option</option>
-						<option value="1">Option 1</option>
-						<option value="2">Option 2</option>
-						<option value="3">Option 3</option>
-					</select>
-					<label>Materialize Multiple Select</label>
-				</div>
+				<button class="waves-effect waves-light btn search-btn2" id="searchBtn2">SEARCH</button>
+
 			</div>
 
-			<div class="search-results2">
-				<p id="searchResults2"></p>
+			<div class="data-ouput-container2" id="dataOuputContainer2">
+				<p>search results</p>
 			</div>
-
 		</div>
 		<div class="map-container2">
 			<div id="map2"></div>

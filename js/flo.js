@@ -2,23 +2,31 @@ var map;
 var infowindow;
 
 var searchBtn = document.getElementById('searchBtn2');
-var enteredKeyword = ["coffee"];
+var enteredKeyword = ['food'];
+var typeOfEstablishment = ['food'];
 
 
 searchBtn.addEventListener('click', function getUserInput() {
     var userInputKeyword = document.getElementById('searchBar2').value;
+    var userSelectedType = document.getElementById('establishmentSelect2').value;
+   
     enteredKeyword.push(userInputKeyword);
+    typeOfEstablishment.push(userSelectedType);
+
     enteredKeyword.splice(0, 1);
+    typeOfEstablishment.splice(0, 1);
+
     initMap();
-    console.log(enteredKeyword);
+
 }, false);
+
 
 
 function initMap() {
     var place = { lat: -40.9006, lng: 174.8860 };
     map = new google.maps.Map(document.getElementById('map2'), {
         center: place,
-        zoom: 4
+        zoom: 8
     });
 
     infowindow = new google.maps.InfoWindow();
@@ -27,10 +35,10 @@ function initMap() {
     service.nearbySearch({
         location: place,
         radius: 50000,
-        types: ["food"],
-        keyword: enteredKeyword[0],
+        types: typeOfEstablishment,
+        keyword: enteredKeyword
     }, callback);
-} 
+}
 
 function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -38,13 +46,41 @@ function callback(results, status) {
             createMarker(results[i]);
         }
     }else {
-        console.log("cannot connect to server");
-        alert("No results Aval");
+        console.log('cannot connect to server');
+        alert('No results Aval');
     }
-    var getNames = results.map(function (a) { return a.name; });
-    console.log(getNames);
+
+    var searchData = results.map(function (data) {
+        returnSearchData(data);
+    });
+
 }
 
+function returnSearchData(searchData) {
+    // console.log(searchData);
+    imagetest(searchData);
+
+    // var x = document.createElement("IMG");
+    // x.setAttribute("src", "img_pulpit.jpg");
+    // x.setAttribute("width", "304");
+    // x.setAttribute("height", "228");
+    // x.setAttribute("alt", "The Pulpit Rock");
+    // document.body.appendChild(x);
+
+}
+
+function imagetest(search) {
+    var output = document.getElementById('dataOuputContainer2');
+
+    var blah = document.createElement("IMG");
+    blah.setAttribute("src", search.icon);
+    blah.setAttribute("width", "100");
+    blah.setAttribute("height", "100");
+    blah.setAttribute("alt", "image");
+    output.appendChild(blah);
+
+    console.log(search);
+}
 
 function createMarker(place) {
     var placeLoc = place.geometry.location;
@@ -63,5 +99,6 @@ function createMarker(place) {
 $(document).ready(function () {
     $('select').material_select();
 });
+
 
 
