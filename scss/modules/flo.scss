@@ -25,15 +25,14 @@
     height: 82%;
 
     .info-search-container2{
-        width: 40%;
+        width: 50%;
         padding: 20px;
         display: flex;
         flex-direction: column;
         align-content: center;
-        // justify-content: space-between;
         .name-of-app2{
             width: 100%;
-            height: 20%;
+            height: 15%;
             margin-right: 20px;
             padding: 20px;
             border: solid 0.5px #bbbbbb;
@@ -108,21 +107,35 @@
             margin-top: 15px;
             padding: 10px;
             border: solid 0.5px #bbbbbb;
-            height: 45%;
+            height: 50%;
             max-height: 800px;
             background: #e7e7e7;
             overflow: scroll;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+
+            .errorMessage2{
+                align-self: center;
+                justify-content: center;
+                width: 60%;
+                margin: auto;
+                .error-message2{
+                    font-size: 20px;
+                    margin: 0;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+
             .card-wrapper2{
                 margin: 5px;
                 background: white;
-                width: 45%;
-                height: 150px;
-                max-height: 300px;
-                // display: 
+                width: 47%;
+                height: 200px;
+                max-height: 500px;
+                overflow: scroll;
 
                 .card-color2{
                     float: left;
@@ -130,20 +143,40 @@
                     height: 100%;
                     background: #44efff;
                 }
-
-                .card-text-wrapper2{
+                .card-text-container2{
                     float: right;
+                    overflow: scroll;
                     width: 90%;
                     height: 100%;
-                    .card-title2{
-                        font-size: 20px;
-                        margin: 0;
+                    padding: 10px;
+                    .card-text-wrapper2{
+                        .card-Title2{
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin: 0;
+                        }
+                        .card-address2{
+                            font-size: 16px;
+                            margin: 0;
+                            margin-top: 5px;
+                            font-weight: 600;
+                        }
+                        .address-info2{
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                        .card-rating2{
+                            font-size: 16px;
+                            margin: 0;
+                            margin-top: 5px;
+                            font-weight: 600;
+                        }
+                        .rating-info2{
+                            font-size: 16px;
+                            margin: 0;
+                        }
                     }
                 }
-               
-            }
-            p{
-                margin: 0;
             }
         }        
     }
@@ -151,12 +184,13 @@
     .map-container2{
         height: 100%;
         max-height: 1200px;
-        width: 60%;
+        width: 50%;
         #map2 {
             height: 100%;
             width: 100%;
         }
     }
 }
-
-
+#loader{
+    display: none;
+}
