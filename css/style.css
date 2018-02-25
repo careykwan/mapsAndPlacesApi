@@ -1,9 +1,80 @@
-<<<<<<< HEAD
 #map {
-  height: 400px;
+  height: 600px;
   width: 100%;
-  background-color: red; }
+  background-color: green;
+  display: inline-block; }
 
+.header1 {
+  font-size: 32px;
+  color: #1E824C;
+  padding-left: 30px;
+  font-family: 'Sirin Stencil';
+  margin-bottom: 0px; }
+
+.control {
+  height: 200px;
+  width: 100%;
+  display: inline-block;
+  background-color: #EEEEEE;
+  top: 0px; }
+
+body {
+  margin: 0px; }
+
+.container_one {
+  height: 100%;
+  width: 100%; }
+
+p {
+  padding-left: 30px;
+  color: #6C7A89;
+  font-family: 'Sirin Stencil'; }
+
+.type {
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  float: right;
+  margin-right: 30px; }
+
+.rating {
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  margin: 0 auto; }
+
+.text {
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  float: left; }
+
+#selectable .ui-selecting {
+  background: white;
+  color: white; }
+
+#selectable .ui-selected {
+  background: #1E824C;
+  color: white; }
+
+#selectableTwo .ui-selecting {
+  background: white;
+  color: white; }
+
+#selectableTwo .ui-selected {
+  background: #1E824C;
+  color: white; }
+
+li {
+  font-family: 'Sirin Stencil';
+  color: #6C7A89;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #1E824C;
+  margin-bottom: 5px;
+  list-style-type: none; }
 
 #map3 {
   height: 400px;
@@ -12,4 +83,3 @@
 #map2 {
   height: 400px;
   width: 100%; }
->>>>>>> master

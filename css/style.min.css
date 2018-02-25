@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-#map{height:400px;width:100%;background-color:red}
-=======
-#map{height:400px;width:100%}#map3{height:400px;width:100%}#map2{height:400px;width:100%}
->>>>>>> master
+#map{height:600px;width:100%;background-color:green;display:inline-block}.header1{font-size:32px;color:#1e824c;padding-left:30px;font-family:'Sirin Stencil';margin-bottom:0}.control{height:200px;width:100%;display:inline-block;background-color:#eee;top:0}body{margin:0}.container_one{height:100%;width:100%}p{padding-left:30px;color:#6c7a89;font-family:'Sirin Stencil'}.type{width:30%;height:50%;display:inline-block;margin:0 auto;float:right;margin-right:30px}.rating{width:30%;height:50%;display:inline-block;margin:0 auto}.text{width:30%;height:50%;display:inline-block;margin:0 auto;float:left}#selectable .ui-selecting{background:#fff;color:#fff}#selectable .ui-selected{background:#1e824c;color:#fff}#selectableTwo .ui-selecting{background:#fff;color:#fff}#selectableTwo .ui-selected{background:#1e824c;color:#fff}li{font-family:'Sirin Stencil';color:#6c7a89;text-align:center;width:100%;border:1px solid #1e824c;margin-bottom:5px;list-style-type:none}#map3{height:400px;width:100%}#map2{height:400px;width:100%}
