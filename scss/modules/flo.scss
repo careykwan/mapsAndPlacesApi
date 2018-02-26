@@ -1,4 +1,194 @@
-#map2 {
-    height: 400px;
-    width: 100%;
+.body2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.back-btn-wrapper2{
+    height: 5%;
+    margin: 30px;
+    // .back-btn2{
+    //     margin-left: 30px;
+    //     margin-top: 30px;
+    // }
+}
+
+
+.app-container2{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    border: solid 2px #000;
+    margin: 30px;
+    height: 82%;
+
+    .info-search-container2{
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        .name-of-app2{
+            width: 100%;
+            height: 15%;
+            margin-right: 20px;
+            padding: 20px;
+            border: solid 0.5px #bbbbbb;
+            .app-title2{
+                font-weight: 700;
+                font-size: 20px;
+                margin:0;
+                text-align: center;
+            }
+            .sub-app-title2{
+                font-style: italic;
+                font-size: 14px;
+                text-align: center;
+                margin:0;
+                margin-top: 5px;
+            }
+        }
+        .search-filter-container2{
+            margin: 0;
+            margin-top: 15px;
+            padding: 20px;
+            width: 100%;
+            height: 35%;
+            border: solid 0.5px #bbbbbb;
+
+            .search-bar-wrapper2{
+                margin-top: 0px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+
+                #searchBar2{
+                    width: 93%;
+                    border: solid 0.5px #d3d3d3;
+                    margin:0;
+                    padding-left: 10px;
+                }
+                .search-icon-wrapper2{
+                    width: 5%;
+                    margin: 5 auto;
+                    margin-left: 5px;
+                    margin-right: 15px;
+                    
+                    .search-icon2{
+                        font-size: 30px;
+                        text-align: center;
+                        color: #d3d3d3;
+                    }
+                }
+            }
+            .selecter-wrapper2{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+
+                .establishment-selecter2{
+                    width: 100%;
+                }
+            }
+
+            .search-btn2{
+                width: 40%;
+                float: right;
+            }
+        }
+        .data-ouput-container2{
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            border: solid 1px #bbbbbb;
+            height: 50%;
+            max-height: 800px;
+            overflow: scroll;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .error-message-wrapper2{
+                align-self: center;
+                width: 100%;
+                margin: auto;
+                font-size: 30px;
+                margin: 0;
+                font-weight: 700;
+                text-align: center;
+     
+            }
+
+            .card-wrapper2{
+                margin: 5px;
+                background: white;
+                width: 47%;
+                height: 200px;
+                max-height: 500px;
+                overflow: scroll;
+                box-shadow:  3px 3px 10px 3px #ccc;
+
+                .card-color2{
+                    float: left;
+                    width:10%;
+                    height: 100%;
+                    background: #44efff;
+                }
+                .card-text-container2{
+                    float: right;
+                    overflow: scroll;
+                    width: 90%;
+                    height: 100%;
+                    padding: 10px;
+                    .card-text-wrapper2{
+                        .card-Title2{
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin: 0;
+                        }
+                        .card-address2{
+                            font-size: 16px;
+                            margin: 0;
+                            margin-top: 5px;
+                            font-weight: 600;
+                        }
+                        .address-info2{
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                        .card-rating2{
+                            font-size: 16px;
+                            margin: 0;
+                            margin-top: 5px;
+                            font-weight: 600;
+                        }
+                        .rating-info2{
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+
+    .map-container2{
+        height: 100%;
+        max-height: 1200px;
+        width: 50%;
+        #map2 {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+#loader{
+    display: none;
 }
