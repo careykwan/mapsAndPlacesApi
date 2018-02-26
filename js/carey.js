@@ -1,9 +1,42 @@
 var map;
 var infowindow;
-var campground = ['campground'];
-var zoo = ['zoo'];
-var park = ['park'];
+var selectedType = ['zoo'];
+// console.log(selectedType);
+// var select = document.querySelectorAll(".lists > li"),
+// console.log(selectedType);
 
+// butt.addEventListener('click', function getInput(){
+//   // var usersSelection = document.getElementById('hello').value;
+//   var usersSelection = document.querySelectorAll('li').attr('choose').value;
+
+//   // var usersSelection = document.getElementsByClassName('choose').text;
+// //   var i;
+// //   for (i = 0; i < usersSelection.length; i++) {
+// //     usersSelection[i].value;
+// // }
+  
+//   selectedType.push(usersSelection);
+//   console.log(selectedType);
+//   selectedType.splice(0);
+
+//   initMap();
+
+// }, false);
+
+$(document).ready(function () {
+
+$('ul li a').on('click', function () { 
+  var item = $(this).parent().attr('value');
+  console.log(selectedType);
+  
+  selectedType.push(item);
+  selectedType.splice(0, 1);
+
+  initMap();
+
+});
+
+});
 function initMap() {
   var place = {lat: -41.2865, lng: 174.7762};
 
@@ -17,10 +50,8 @@ function initMap() {
   service.nearbySearch({
     location: place,
     radius: 60000,
-    // type: ['zoo'],
-    type: ['zoo'],
-    // type: ['park'],
-    // name: 'Hotel'
+    type: selectedType,
+    rating: 5[1],
   }, callback);
 
 }
@@ -47,17 +78,8 @@ function createMarker(place) {
   });
 }
 
-$(document).ready(function(){
 
-    $('#campground').select(function() {
-        type.push(campground);
-        console.log(type);
-      
-    });
-});
-console.log(campground);
-console.log(zoo);
-console.log(park);
+
 //this is for the selectable options jquery ui
 $('#selectable').selectable();
 

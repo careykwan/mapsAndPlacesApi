@@ -51,22 +51,6 @@ p {
   margin: 0 auto;
   float: left; }
 
-#selectable .ui-selecting {
-  background: white;
-  color: white; }
-
-#selectable .ui-selected {
-  background: #1E824C;
-  color: white; }
-
-#selectableTwo .ui-selecting {
-  background: white;
-  color: white; }
-
-#selectableTwo .ui-selected {
-  background: #1E824C;
-  color: white; }
-
 li {
   font-family: 'Sirin Stencil';
   color: #6C7A89;
@@ -75,6 +59,10 @@ li {
   border: 1px solid #1E824C;
   margin-bottom: 5px;
   list-style-type: none; }
+
+li:hover {
+  background-color: #1E824C;
+  color: white; }
 
 #page-container3 {
   margin: 0;
