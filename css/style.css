@@ -14,9 +14,9 @@
   width: 100%; }
 
 #content-container3 {
-  position: absolute;
+  position: relative;
   float: left;
-  width: 48%;
+  width: 44%;
   height: 80vh;
   margin: 0px;
   background-color: #2e3940; }
@@ -32,11 +32,10 @@
   float: right;
   height: 100%;
   max-height: 1000px;
-  width: 45%; }
+  width: 55%; }
 
 #heading3 {
-  float: left;
-  margin-left: 25%;
+  text-align: center;
   font-size: 30px;
   color: white; }
 
@@ -49,12 +48,12 @@
   border-radius: 0px; }
 
 .sub-btn3 {
-  margin-left: 20px;
-  margin-top: 10px; }
+  margin-left: 40%;
+  margin-top: -20px; }
 
 #radio-container3 {
   width: 30%;
-  height: 200px; }
+  height: 120px; }
 
 #form3 {
   margin-left: 20px; }
@@ -63,6 +62,32 @@
 
 [type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
   border: 2px solid white; }
+
+#details3 {
+  margin-top: 10px;
+  width: 100%;
+  height: 50%; }
+
+#heading-two3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 45px; }
+
+#radio-one3 {
+  position: absolute;
+  left: 8%;
+  top: 15%; }
+
+#radio-two3 {
+  position: absolute;
+  left: 45%;
+  top: 15%; }
+
+#radio-three3 {
+  position: absolute;
+  left: 75%;
+  top: 15%; }
 
 .body2 {
   font-family: 'Open Sans', sans-serif;
@@ -213,5 +238,3 @@
 
 #loader {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */
