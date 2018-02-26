@@ -1,5 +1,8 @@
 var map;
 var infowindow;
+var campground = ['campground'];
+var zoo = ['zoo'];
+var park = ['park'];
 
 function initMap() {
   var place = {lat: -41.2865, lng: 174.7762};
@@ -15,7 +18,7 @@ function initMap() {
     location: place,
     radius: 60000,
     // type: ['zoo'],
-    type: ['campground'],
+    type: ['zoo'],
     // type: ['park'],
     // name: 'Hotel'
   }, callback);
@@ -44,6 +47,17 @@ function createMarker(place) {
   });
 }
 
+$(document).ready(function(){
+
+    $('#campground').select(function() {
+        type.push(campground);
+        console.log(type);
+      
+    });
+});
+console.log(campground);
+console.log(zoo);
+console.log(park);
 //this is for the selectable options jquery ui
 $('#selectable').selectable();
 
