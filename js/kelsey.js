@@ -10,9 +10,10 @@ submitBtn.addEventListener('click', function getRadioChoice(){
   var chosenRadio = $('input[name=group1]:checked').val();
   chosenKeyword.push(chosenRadio);
   chosenKeyword.splice(0, 1);
-
+    $('#name-details3').empty();
+     $('#address-details3').empty();
   initMap();
-  appendDetails();
+  
   
 
 }, false);
@@ -22,7 +23,7 @@ var map;
 var infowindow;
 
 function initMap() {
-  var place = {lat: -40.9006, lng: 174.8860};
+  var place = {lat: -41.28656, lng: 174.7762};
 
   map = new google.maps.Map(document.getElementById('map3'), {
     center: place,
@@ -33,7 +34,7 @@ function initMap() {
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
     location: place,
-    radius: 50000,
+    radius: 30000,
     type: ['lodging'],
     keyword: chosenKeyword[0],
   }, callback);
@@ -63,12 +64,10 @@ function createMarker(place) {
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
+    $('#name-details3').empty();
+     $('#address-details3').empty();
+    $('#name-details3').append(place.name);
+    $('#address-details3').append(place.vicinity);
   });
 }
 
-function appendDetails(){
-  acomNames.splice(0);
-  $('#name-details3').empty();
-  $('#name-details3').append('name' + acomNames);
- 
-}
