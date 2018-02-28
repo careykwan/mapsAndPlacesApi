@@ -49,7 +49,7 @@ function callback2(results, status) {
     }else {
         var errorMessageWrapper2 = document.createElement('h3');
         errorMessageWrapper2.className = 'error-message-wrapper2';
-        document.getElementById('dataOuputContainer2').appendChild(errorMessageWrapper);
+        document.getElementById('dataOuputContainer2').appendChild(errorMessageWrapper2);
 
         var errorMessage2 = document.createTextNode('Sorry there are no results matching your search, please try again.');
         errorMessageWrapper2.appendChild(errorMessage2);
@@ -65,14 +65,14 @@ function callback2(results, status) {
 function createMarker2(place) {
     
     var placeLoc = place.geometry.location;
-    var marker = new google.maps.Marker({
+    var marker2 = new google.maps.Marker({
         map: map2,
         position: place.geometry.location
     });
 
-    google.maps.event.addListener(marker, 'click', function () {
+    google.maps.event.addListener(marker2, 'click', function () {
         infowindow2.setContent(place.name);
-        infowindow2.open(map, this);
+        infowindow2.open(map2, this);
     });
 }
 
@@ -107,7 +107,7 @@ function appendResultCards2(searchData) {
     
     // creating h1 element for card title
     var cardTitle2 = document.createElement('p');
-    cardTitle2.className = 'card-Title2';
+    cardTitle2.className = 'card-Title2 text2';
     cardTextWrapper2.appendChild(cardTitle2);
 
     var titleName2 = document.createTextNode(searchData.name);
@@ -115,14 +115,14 @@ function appendResultCards2(searchData) {
 
     // adding address
     var cardAddress2 = document.createElement('p');
-    cardAddress2.className = 'card-address2';
+    cardAddress2.className = 'card-address2 text2';
     cardTextWrapper2.appendChild(cardAddress2);
 
     var addressTitle2 = document.createTextNode('Address: ');
     cardAddress2.appendChild(addressTitle2);
 
     var addressInfo2 = document.createElement('p');
-    addressInfo2.className = 'address-info2';
+    addressInfo2.className = 'address-info2 text2';
     cardTextWrapper2.appendChild(addressInfo2);
 
     var addressInfoContent2 = document.createTextNode(searchData.vicinity);
@@ -130,14 +130,14 @@ function appendResultCards2(searchData) {
 
     // adding rating
     var cardRating2 = document.createElement('p');
-    cardRating2.className = 'card-rating2';
+    cardRating2.className = 'card-rating2 text2';
     cardTextWrapper2.appendChild(cardRating2);
 
     var ratingTitle2 = document.createTextNode('Rating: ');
     cardRating2.appendChild(ratingTitle2);
 
     var ratingInfo2 = document.createElement('p');
-    ratingInfo2.className = 'rating-info2';
+    ratingInfo2.className = 'rating-info2 text2';
     cardTextWrapper2.appendChild(ratingInfo2);
 
     var ratingInfoContent2 = document.createTextNode(searchData.rating);
