@@ -92,7 +92,7 @@ li:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#66eee4, #56d9ec, #2da7c1); }
+  background-color: #f2f6fc; }
 
 #map3 {
   height: 100%;
@@ -161,18 +161,42 @@ li:hover {
 
 #radio-one3 {
   position: absolute;
-  left: 8%;
-  top: 15%; }
+  left: 6%;
+  top: 15%;
+  font-family: "Roboto", sans-serif;
+  padding-left: 0px; }
 
 #radio-two3 {
   position: absolute;
-  left: 45%;
-  top: 15%; }
+  left: 38%;
+  top: 15%;
+  font-family: "Roboto", sans-serif;
+  padding-left: 0px; }
 
 #radio-three3 {
   position: absolute;
-  left: 75%;
-  top: 15%; }
+  left: 70%;
+  top: 15%;
+  font-family: "Roboto", sans-serif;
+  padding-left: 0px; }
+
+#names3 {
+  width: 50%;
+  border: 1px solid white;
+  height: 150px;
+  margin-left: 150px;
+  margin-top: 50px; }
+
+#names3 #name-details3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+  padding-right: 5px; }
+#names3 #address-details3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .body2 {
   font-family: 'Open Sans', sans-serif;
@@ -293,6 +317,8 @@ li:hover {
           width: 90%;
           height: 100%;
           padding: 10px; }
+          .app-container2 .info-search-container2 .data-ouput-container2 .card-wrapper2 .card-text-container2 .card-text-wrapper2 .text2 {
+            font-family: 'Open Sans', sans-serif; }
           .app-container2 .info-search-container2 .data-ouput-container2 .card-wrapper2 .card-text-container2 .card-text-wrapper2 .card-Title2 {
             font-size: 20px;
             font-weight: 700;
@@ -324,4 +350,80 @@ li:hover {
 #loader {
   display: none; }
 
+<<<<<<< HEAD
+=======
+body {
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FECE3D;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  border-bottom: solid 3px #fff; }
+  .header-container h1 {
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    text-transform: uppercase; }
+  .header-container p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 16;
+    font-weight: 600;
+    padding-bottom: 20px; }
+
+.sub-projects-links-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  background-color: #FECE3D;
+  border-top: solid 3px #fff; }
+  .sub-projects-links-container h4 {
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 25px; }
+  .sub-projects-links-container .icon-links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px; }
+  .sub-projects-links-container .icon-wrapper {
+    margin: 20;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px; }
+    .sub-projects-links-container .icon-wrapper p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px; }
+  .sub-projects-links-container .find-out-more-icon {
+    font-size: 60px;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px; }
+
+>>>>>>> master
 /*# sourceMappingURL=style.css.map */

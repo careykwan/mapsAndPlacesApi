@@ -8,10 +8,6 @@
 .back-btn-wrapper2{
     height: 5%;
     margin: 30px;
-    // .back-btn2{
-    //     margin-left: 30px;
-    //     margin-top: 30px;
-    // }
 }
 
 
@@ -148,6 +144,9 @@
                     height: 100%;
                     padding: 10px;
                     .card-text-wrapper2{
+                        .text2{
+                            font-family: 'Open Sans', sans-serif;
+                        }
                         .card-Title2{
                             font-size: 20px;
                             font-weight: 700;

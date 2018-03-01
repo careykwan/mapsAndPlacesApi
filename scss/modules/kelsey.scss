@@ -3,7 +3,7 @@
 	padding: 0;
 	width: 100vw;
 	height: 100vh;
-	background:linear-gradient(#66eee4, #56d9ec, #2da7c1);
+	background-color: #f2f6fc;
 }
 #map3 {
 	height: 100%;
@@ -86,16 +86,49 @@
 }
 #radio-one3 {
 position: absolute;
-left:8%;
+left:6%;
 top:15%;
+font-family: "Roboto", sans-serif;
+padding-left: 0px;
+
+
 }
 #radio-two3 {
 position: absolute;
-left: 45%;
+left: 38%;
 top:15%;
+ font-family: "Roboto", sans-serif;
+ padding-left: 0px;
 }
 #radio-three3 {
 position: absolute;
-left:75%;
+left:70%;
 top:15%;
+ font-family: "Roboto", sans-serif;
+ padding-left: 0px;
+}
+
+#names3{
+	width:50%;
+	border: 1px solid white;
+	height: 150px;
+	margin-left: 150px;
+	margin-top: 50px;
+	
+}
+
+#names3{
+	#name-details3{
+		color: white;
+		font-family: "Roboto", sans-serif;
+		padding-left: 5px;
+		padding-right: 5px;
+
+	}
+	#address-details3 {
+		color: white;
+		 font-family: "Roboto", sans-serif;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
