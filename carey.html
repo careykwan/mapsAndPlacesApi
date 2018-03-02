@@ -3,40 +3,33 @@
 	<meta charset="UTF-8">
 	<title>Carey's website</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
-
-
-
-	
-	</style>
 </head>
 <body>
 	<div class='container_one'>
 		<div class='control'>
 			<h1 class='header1'>Parks & recreation</h1>
 			<div class='text'>
-				<p>Discover the great outdoors of Wellington City. Search for parks, Zoos and campgrounds, just click on the options to explore!</p>
+				<p class='intro'>Discover the great outdoors of Wellington City. Search for parks, Zoos and campgrounds, just click on the options to explore!</p>
+				<a class='button' href='index.html'>Back!</a>
 			</div>
 			
 			<div class='rating'>
 				<ul class='lists'>
-					<li value="campground"><a>Campgrounds</a></li>
-					<li value="zoo"><a>Zoo</a></li>
-					<li value="park"><a>Park</a></li>
+					<li value='campground'><a>Campgrounds</a></li>
+					<li value='zoo'><a>Zoo</a></li>
+					<li value='park'><a>Park</a></li>
 				</ul>
 			</div>
 
 			<div class='type'>
-				<ul class='lists' id='selectableTwo'>
-				  <li>3 stars and below</li>
-				  <li>4 stars</li>
-				  <li>5 stars</li>
-				</ul>
+				<p class='info' id='instruct'>Click on the markers to find the location!</p>
+				<p class='info' id='name'></p>
+				<p class='info' id='address'></p>
+				<p class='info' id='rating'></p>
 			</div>
 
 		</div>
-
 
 	    <div id='map'></div>
 
@@ -44,9 +37,6 @@
 
 <script type='text/javascript' src='node_modules/jquery/dist/jquery.min.js'></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-i0Prlq_867UzFtLYIaLz1UeSsCxhQ10&&libraries=places&callback=initMap"></script>
-<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 <script type='text/javascript' src='js/carey.js'></script>
 
 </body>

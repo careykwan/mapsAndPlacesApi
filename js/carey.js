@@ -1,27 +1,6 @@
 var map;
 var infowindow;
 var selectedType = ['zoo'];
-// console.log(selectedType);
-// var select = document.querySelectorAll(".lists > li"),
-// console.log(selectedType);
-
-// butt.addEventListener('click', function getInput(){
-//   // var usersSelection = document.getElementById('hello').value;
-//   var usersSelection = document.querySelectorAll('li').attr('choose').value;
-
-//   // var usersSelection = document.getElementsByClassName('choose').text;
-// //   var i;
-// //   for (i = 0; i < usersSelection.length; i++) {
-// //     usersSelection[i].value;
-// // }
-  
-//   selectedType.push(usersSelection);
-//   console.log(selectedType);
-//   selectedType.splice(0);
-
-//   initMap();
-
-// }, false);
 
 $(document).ready(function () {
 
@@ -37,6 +16,7 @@ $('ul li a').on('click', function () {
 });
 
 });
+
 function initMap() {
   var place = {lat: -41.2865, lng: 174.7762};
 
@@ -51,7 +31,6 @@ function initMap() {
     location: place,
     radius: 60000,
     type: selectedType,
-    rating: 5[1],
   }, callback);
 
 }
@@ -74,25 +53,19 @@ function createMarker(place) {
 
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
+    $('#instruct').empty();
+    $('#name').empty();
+    $('#address').empty();
+    $('#rating').empty();
+    $("#name").append(place.name);
+    $("#address").append(place.vicinity);
+    $("#rating").append('Rating: ' + place.rating);
     infowindow.open(map, this);
   });
 }
 
 
 
-//this is for the selectable options jquery ui
-$('#selectable').selectable();
 
-$('#selectableTwo').selectable();
-
-
-// Psuedo code:
-
-// 1.select option
-// 2. push option into array
-// 3. access array
-// 4. access array and put into type in map
-// 5. display marker
-// 6. new option selected, clear option before
 
 
