@@ -18,5 +18,5 @@ To be able to edit the API data you will need to get an accessToken for the Goog
 - To avoid conflicts every member has been assigned a number to differenciate class and id names for css styling, the number will be added to every name created at the end. 
 - Each memeber must not work on the master branch, therefore they must work on their own seperate branches.
 
-- The best practices we are following, will be the [Yoobee School of Design Web Best Practices](http://handlebarsjs.com/) guildlines.  
+- The best practices we are following, will be the [Yoobee School of Design Web Best Practices](http://yoobee.net.nz/BestPractices/) guildlines.  
 
